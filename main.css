@@ -1,0 +1,257 @@
+
+
+main {
+  flex-grow: 1; /* Tüm boş alanı kaplamak için */
+  background-color: #f7f6f9;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Dikeyde ortalamak için */
+  
+}
+
+main .topControls {
+  color: #040404;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+main .topControls i:hover {
+  color: gray;
+  
+}
+
+main .listingControls {
+  color: #040404;
+  display: flex;
+  gap: 8px;
+  
+}
+
+main .customSelect {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+main .daysControls {
+  all: unset;
+  font-family: sans-serif;
+}
+main .dashboard{
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0px 10px;
+}
+main .dashboard p {
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.key-metrics {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Başlıkları sola yasla */
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px;
+  gap: 5px;
+  width: 60%;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between; /* Rakamları sağa yasla */
+  width: 50%;
+  padding: 10px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+.keytitle {
+  font-weight: bold;
+  margin-block-end: 2%;
+}
+
+
+.bar-container {
+  position: flex;
+}
+
+.bar {
+  text-align: right;
+}
+
+
+.endthings
+{
+  display: flex; /* Ana div'i yatay olarak hizalar */
+  flex: 1; /* Eşit genişlikte olmalarını sağlar */
+  margin-right: 10px; /* Sağ taraftaki boşluğu ayarlar */
+}
+
+
+.endcards {
+  align-items: center; 
+  margin-top: 25px;
+  display: flex;
+  gap: 16px;
+  margin-left: auto; /* Sağa yaslar */
+}
+
+.keycard-content {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  border: 3px solid #fff;
+  border-radius: 22px;
+  padding: 26px 16px; /* Üst ve alt boşluk ayarları */
+  background-color: #5d1f81;
+  color: white;
+  gap: 58px; /* Öğeler arasındaki boşluk */
+  margin-left: 15px;;
+}
+
+.endcards .subtitle {
+  font-size: 45px;
+}
+
+
+.endcards .title {
+  font-size: 20px;
+}
+
+#icon {
+  color: red; /* İkonun rengini mavi yapar */
+  font-size: 20px;
+}
+
+#icongreen {
+  color:green;
+  font-size: 20px;
+}
+
+#icon span {
+  color: white; /* İçindeki rakamın rengini beyaz yapar */
+}
+
+#icongreen span {
+  color: white; /* İçindeki rakamın rengini beyaz yapar */
+}
+/* NAV */
+
+nav {
+  
+  width: 100px; /* Örneğin, nav öğesinin genişliğini 200px olarak ayarlayın */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Sol kenara hizalamak için */
+  padding-block: 16px;
+  
+}
+
+
+nav i {
+  color: #040404;
+  font-size: 42px;
+  line-height: 1; /* İkonları yukarıya yaslar */
+}
+nav hr {
+  all: unset;
+  background-color: #f7f6f9;
+  width: 100%;
+  height: 1px;
+  margin-top: 16px;
+}
+nav ul {
+  flex: 1;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+nav i:hover {
+  color: rgb(163, 113, 113);
+}
+
+
+/* CARDS */
+
+.cards {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.card {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.card:hover {
+  background-color: rgb(255, 255, 255); /* Hover durumunda sınıra gri rengi uygula */
+}
+.card .fa-twitter {
+  color: #1da1f2;
+  font-size: 32px;
+  
+}
+.card .fa-instagram {
+  color: #7b4ed4;
+  font-size: 32px;
+}
+.card .fa-youtube {
+  color: #e71e1e;
+  font-size: 32px;
+}
+.card .fa-facebook {
+  color: #005cb3;
+  font-size: 32px;
+}
+.card .title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.card .subtitle {
+  font-size: 12px;
+  color: gray;
+}
+.fa-ellipsis-h {
+  align-self: flex-end;
+  margin-top: 12px;
+}
+
+
+/* ASIDE */
+aside {
+
+  top: 0; /* Üst kenara sabitle */
+  right: 0; /* Sağ kenara sabitle */
+ 
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Yukarıya taşımak için */
+  padding: 20px;
+}
+
+aside img {
+  width: 100px;
+  height: auto;
+}

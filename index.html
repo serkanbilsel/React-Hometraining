@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobil Desing Ödev - Serkan Bilsel</title>
+  <link rel="stylesheet" href="bootstrapDatepicker.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="body.css" />
+
+  <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body class="background-link">
+  <div class="container">
+    <nav>
+      <a href="#"><i class="fa-2x fa fa-eye"></i></a>
+      <hr />
+      <ul>
+        <li>
+          <a href="#"><i class="fa-1x fa fa-heart"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-1x fa fa-podcast"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-1x fa fa-calendar"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-1x fa fa-cog"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-1x fa fa-comments"></i></a>
+        </li>
+      </ul>
+      <a href="#"><i class="fa-1x fa fa-sign-out"></i></a>
+    </nav>
+
+    <main>
+      <div class="topControls">
+        <div class="listingControls">
+          <a href="#"><i class="fa-x fa fa-list"></i></a>
+          <a href="#"><i class="fa-x fa fa-bars"></i></a>
+        </div>
+        <div class="customSelect">
+          <select name="days" id="days" class="daysControls">
+            <option value="15">Last 15 days</option>
+            <option value="30">Last 30 days</option>
+          </select>
+          <i class="fa fa-caret-down"></i>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <i class="fa fa-twitter"></i>
+          <span class="title">280k</span>
+          <span class="subtitle">Followers</span>
+          <i class="fa fa-ellipsis-h"></i>
+        </div>
+        <div class="card">
+          <i class="fa fa-instagram"></i>
+          <span class="title">680k</span>
+          <span class="subtitle">Followers</span>
+          <i class="fa fa-ellipsis-h"></i>
+        </div>
+        <div class="card">
+          <i class="fa fa-youtube"></i>
+          <span class="title">2.3M</span>
+          <span class="subtitle">Followers</span>
+          <i class="fa fa-ellipsis-h"></i>
+        </div>
+        <div class="card">
+          <i class="fa fa-facebook"></i>
+          <span class="title">50k</span>
+          <span class="subtitle">Followers</span>
+          <i class="fa fa-ellipsis-h"></i>
+        </div>
+      </div>
+
+      <div class="dashboard">
+        <p>Instagram Subscribers</p>
+
+        <canvas id="myChart" class="forchart"></canvas>
+      </div>
+
+      <div class="endthings">
+      <div class="key-metrics">
+        <div class="keytitle">Key Metrics</div>
+        <div class="metric">
+          <div class="metric-name">Clicks</div>
+          <div class="metric-value">10k</div>
+        </div>
+        <div class="metric">
+          <div class="metric-name">Likes</div>
+          <div class="metric-value">680</div>
+        </div>
+        <div class="metric">
+          <div class="metric-name">Followers</div>
+          <div class="metric-value">8k</div>
+        </div>
+        <div class="metric">
+          <div class="metric-name">Impressions</div>
+          <div class="metric-value">550</div>
+        </div>
+      </div>
+      
+      
+      <div class="endcards">
+        <div class="keycard-content">
+          <span class="title">Engaged Users</span>
+          <span class="subtitle">12.2k</span>
+          <i id="icongreen" class="fa fa-angle-double-up fa-2x" aria-hidden="true"><span class="icon-text">%19</span></i>
+        </div>
+      </div>
+        <div class="endcards">
+        <div class="keycard-content">
+          <span class="title">Page Impressions</span>
+          <span class="subtitle">8.6k</span>
+          <i id="icon" class="fa fa-angle-double-down fa-2x" aria-hidden="true"><span class="icon-text">%9</span></i>
+        </div>
+      </div>
+
+    </div>
+      
+      <!-- BURASI AŞAĞIDAKİ CARTLAR -->
+
+
+
+    </main>
+
+
+    <aside>
+      <i id="bell" class="fa fa-bell-o fa-2x" aria-hidden="true"></i>
+
+
+      <img src="https://cdn.vectorstock.com/i/1000x1000/49/70/undressed-man-working-in-heat-office-with-fan-vector-37914970.webp" alt="">
+
+      <div class="datepicker"></div>
+      
+    </aside>
+  </div>
+</body>
+
+<script>
+  $(".datepicker").datepicker();
+</script>
+
+</html>
