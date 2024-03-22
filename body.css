@@ -3,6 +3,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -10,20 +12,17 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 80%; /* Yüzde olarak belirtilmiş maksimum genişlik */
+  max-width: 80%;
   border-radius: 30px;
   background-color: #fff;
-  margin: auto; /* Üst ve alt boşluk ayarı */
+  margin: auto;
+  padding: 20px;
+  /* İçeriğin kenarlardan biraz uzak olması için padding eklendi */
 }
-
-
-
 
 .background-link.background-link {
-  width: 100%; /* Arka plan bağlantısının tam ekran genişliğinde olmasını sağlar */
-  height: 100vh; /* Arka plan bağlantısının tam ekran yüksekliğinde olmasını sağlar */
-  background-image: url('https://st2.depositphotos.com/29662092/49766/i/450/depositphotos_497664682-stock-photo-neon-background-technology-concept-neon.jpg'); /* Arka plan resmini burada belirtin */
-  background-size: cover; /* Arka plan resminin div içinde tamamen kaplanmasını sağlar */
-
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://st2.depositphotos.com/29662092/49766/i/450/depositphotos_497664682-stock-photo-neon-background-technology-concept-neon.jpg');
+  background-size: cover;
 }
-
